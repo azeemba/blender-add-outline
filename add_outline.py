@@ -31,7 +31,7 @@ def add_modifier(obj):
     """Add the solidify modifier to object"""
     obj.modifiers.new("Outline", "SOLIDIFY")
     modifier = obj.modifiers["Outline"]
-    modifier.thickness = 0.05
+    modifier.thickness = 0.01
     modifier.use_rim = False
     modifier.offset = 1
     modifier.use_flip_normals = True
