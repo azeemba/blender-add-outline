@@ -4,7 +4,7 @@ bl_info = {
     "description": "Add NPR/cartoon outline to an object that works in eevee and cycles",
     "author": "Azeem Bande-Ali",
     "version": (0, 1),
-    "blender": (2, 90),
+    "blender": (3, 6),
     "category": "Material"
 }
 
@@ -78,7 +78,7 @@ def menu_func(self, context):
 class OutlinePreferences(AddonPreferences):
 
     bl_idname = __name__
-    source = StringProperty(
+    source: StringProperty(
         name="Blend file",
         subtype="FILE_PATH")
     
